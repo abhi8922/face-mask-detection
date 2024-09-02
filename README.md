@@ -26,7 +26,7 @@ Python Code Snippet:
 
 Pip Install OpenCV
 import cv2
-vid=cv2.VideoCapture("http://192.168.277.91:8080/video")
+vid=cv2.VideoCapture("camera url")
 while(vid.isOpened()):
     flag,frame=vid.read()
     if(flag):
@@ -46,7 +46,7 @@ Python Code Snippet:
 
 import cv2
 facemodel=cv2.CascadeClassifier("face.xml")
-vid=cv2.VideoCapture("http://192.168.29.223:8080/video")
+vid=cv2.VideoCapture("camera url/video")
 while(vid.isOpened()):
     flag,frame=vid.read()
     if(flag):
@@ -66,7 +66,7 @@ Save Data
 Python Code Snippet:
 import cv2
 facemodel=cv2.CascadeClassifier("face.xml")
-vid=cv2.VideoCapture("http://192.168.29.223:8080/video")
+vid=cv2.VideoCapture("camera url/video")
 i=1
 while(vid.isOpened()):
     flag,frame=vid.read()
